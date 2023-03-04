@@ -513,6 +513,8 @@
 
         <div class="bunga" id="bunga">
             <h1 class="text">hehe...</h1>
+            <h3 class="text" style="color: white;">message: 
+                6c057221b71fbf3805ce12e249b05cbc</h1>
             <div class="flower">
                 <div class="flower-pp">
                     <div class="flower_l"></div>
@@ -567,8 +569,10 @@
             const bunga = document.getElementById("bunga");
             const greeting = document.getElementById("greeting");
             bunga.style.display = "none";
+            const sound = new Audio('./sound.mp3')
 
             const show = () => {
+                sound.play()
                 greeting.style.display = "none";
                 bunga.style.display = "block";
             };
